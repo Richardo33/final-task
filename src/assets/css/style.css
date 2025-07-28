@@ -1,0 +1,160 @@
+.profile-photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.available-status i {
+  font-size: 14px;
+  margin-right: 6px;
+}
+.available {
+  color: green;
+}
+
+.not-available {
+  color: red;
+}
+
+.detail {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* membesar 10% */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Opsional: agar tidak muncul scrollbar jelek di browser */
+.tech-carousel-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.tech-carousel-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark-mode .card .text-muted {
+  color: #ccc !important;
+}
+
+body.dark-mode .badge {
+  background-color: #333;
+  color: #fff;
+}
+
+.card {
+  box-shadow: gray;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+body.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode a:hover {
+  color: #bbdefb;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .btn-outline-dark {
+  color: #fff;
+  border-color: #ccc;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #333;
+  border-color: #ccc;
+}
+
+body.dark-mode .btn-outline-success {
+  color: #90ee90;
+  border-color: #90ee90;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  background-color: #1e4d1e;
+}
+
+.tech-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-tech 30s linear infinite;
+}
+
+@keyframes scroll-tech {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.techSwiper {
+  padding: 10px 0;
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.techSwiper {
+  max-height: 140px; /* kamu bisa sesuaikan */
+  padding: 1rem 0; /* beri sedikit ruang atas bawah */
+}
+
+.swiper-slide img {
+  max-height: 80px; /* atau 60px agar seragam */
+  object-fit: contain;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "personal_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Alvin Rikardo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2",
+    "hbs": "^4.2.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3"
+  }
+}

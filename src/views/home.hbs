@@ -1,0 +1,484 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Personal Web</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light custom-navbar px-4"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/uploads/icon/logo.png" alt="Logo" height="40" />
+        </a>
+
+        <div class="collapse navbar-collapse order-md-1" id="mainNavbar">
+          <div
+            class="ms-auto d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mt-3 mt-md-0"
+          >
+            <a class="nav-link" href="#Technologies">Techstack</a>
+            <a class="nav-link" href="#Experiences">Experience</a>
+            <a class="nav-link" href="#Project">Projects</a>
+
+            <a
+              href="https://wa.me/6281993218599"
+              target="_blank"
+              class="btn btn-success d-flex align-items-center gap-1"
+            >
+              <i class="bi bi-whatsapp"></i>
+              Let's Talk
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1qixae2Ecj4ft26nThV8cpInfKK1nsKYw/view?usp=drive_link"
+              class="btn btn-dark d-flex align-items-center gap-1"
+              target="_blank"
+            >
+              <i class="bi bi-download"></i>
+              Download CV
+            </a>
+            <button
+              id="toggleDarkMode"
+              class="btn btn-sm btn-outline-secondary"
+            >
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tampilan Utama -->
+    <div class="container py-5 pe-md-5 mb-5">
+      <div class="row align-items-center">
+
+        <!-- FOTO -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img
+            src="../assets/uploads/Johan.jpeg"
+            alt="Profile Photo"
+            class="profile-photo shadow hover-zoom"
+          />
+        </div>
+
+        <!-- INFO UTAMA -->
+        <div class="col-md-8">
+          <h1 class="display-4 fw-bold">Hi, I'm Alvin</h1>
+          <h4 class="text-muted mb-3">Fullstack Web Developer</h4>
+
+          <p class="detail mb-4 fs-4 text-secondary text-justify">
+            Fullstack Developer with strong foundation in front-end and back-end
+            development, web technologies, and agile practices. Proven ability
+            to build scalable, high-quality applications, enhance user
+            experience, and contribute effectively in cross-functional teams.
+            Seeking to deliver impactful solutions within a dynamic tech
+            environment.
+          </p>
+
+          <p class="mb-2">
+            <i class="bi bi-geo-alt text-primary"></i>
+            Tangerang, Banten, Indonesia
+          </p>
+
+          <p class="mb-4 available-status">
+            <i class="bi bi-circle-fill available"></i>
+            Available for Work
+            {{! <i class="bi bi-circle-fill not-available"></i> Not Available for Work }}
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a
+              href="https://wa.me/6281993218599"
+              target="_blank"
+              class="btn btn-outline-success btn-lg"
+            >
+              <i class="bi bi-whatsapp"></i>
+              Let's Talk
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1qixae2Ecj4ft26nThV8cpInfKK1nsKYw/view?usp=drive_link"
+              class="btn btn-outline-dark btn-lg"
+              target="_blank"
+            >
+              <i class="bi bi-download"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="container text-start my-5 mb-5 pb-5">
+      <h2 class="mb-5" id="Technologies">Technologies</h2>
+
+    <div class="swiper techSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Tech Slides -->
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/reactJs.png" class="img-fluid tech-icon mb-2" alt="React JS" />
+        <p class="mb-0">React JS</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/nodeJS.png" class="img-fluid tech-icon mb-2" alt="Node JS" />
+        <p class="mb-0">Node JS</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/ExpressJS.png" class="img-fluid tech-icon mb-2" alt="Express" />
+        <p class="mb-0">Express</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/mySQL.png" class="img-fluid tech-icon mb-2" alt="MySQL" />
+        <p class="mb-0">MySQL</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/jira.png" class="img-fluid tech-icon mb-2" alt="Jira" />
+        <p class="mb-0">Jira</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/postgreSQL.png" class="img-fluid tech-icon mb-2" alt="PostgreSQL" />
+        <p class="mb-0">PostgreSQL</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/materialUI.png" class="img-fluid tech-icon mb-2" alt="Material UI" />
+        <p class="mb-0">Material UI</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/bootstrap.png" class="img-fluid tech-icon mb-2" alt="Bootstrap" />
+        <p class="mb-0">Bootstrap</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/javascript.png" class="img-fluid tech-icon mb-2" alt="JavaScript" />
+        <p class="mb-0">JavaScript</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/git.png" class="img-fluid tech-icon mb-2" alt="Git" />
+        <p class="mb-0">Git</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/databricks.png" class="img-fluid tech-icon mb-2" alt="Databricks" />
+        <p class="mb-0">Databricks</p>
+      </div>
+      <div class="swiper-slide text-center">
+        <img src="/assets/uploads/icon/jenkins.png" class="img-fluid tech-icon mb-2" alt="Jenkins" />
+        <p class="mb-0">Jenkins</p>
+      </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    
+
+    <!-- Experience -->
+    <div class="container my-5 mb-5 pb-5">
+      <h2 class="mb-4" id="Experiences">Work Experiences :</h2>
+
+      <div class="card border-0 p-4 mb-4">
+        <div class="d-flex justify-content-between flex-wrap">
+          <div class="d-flex">
+            <img
+              src="/assets/uploads/icon/AIA.png"
+              alt="Company Logo"
+              class="me-4"
+              style="width: 100px; height: 60px; object-fit: contain;"
+            />
+            <div>
+              <h5 class="mb-1 fw-bold">Database Developer</h5>
+              <a
+                href="https://companywebsite.com"
+                class="text-success text-decoration-none d-block mb-2"
+                target="_blank"
+              >
+                AIA Singapore - Batam
+              </a>
+
+              <p class="text-muted mb-2 d-md-none">May 2023 - Jan 2025</p>
+
+              <!-- Deskripsi Pekerjaan -->
+              <ul class="mb-2 ps-3">
+                <li>Transitioned into the role of Database Developer from Data
+                  Architect background</li>
+                <li>Designed and implemented scalable data architecture using
+                  PostgreSQL and Databricks</li>
+                <li>Managed data extraction, transformation, and loading (ETL)
+                  processes</li>
+                <li>Supported cross-functional teams with timely and reliable
+                  data solutions</li>
+                <li>Deployed UAT builds via Jenkins; prepared production
+                  releases using Jira</li>
+                <li>Applied Agile methodologies to ensure efficient and on-time
+                  project delivery</li>
+              </ul>
+
+              <!-- Tech Stack -->
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-secondary">PostgreSQL</span>
+                <span class="badge bg-secondary">Databricks</span>
+                <span class="badge bg-secondary">Jira</span>
+                <span class="badge bg-secondary">Jenkins</span>
+                <span class="badge bg-secondary">git</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="text-end mt-3 mt-md-0 d-none d-md-block">
+            <span class="text-muted">May 2023 - Jan 2025</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card border-0 p-4 mb-4">
+        <div class="d-flex justify-content-between flex-wrap">
+
+          <div class="d-flex">
+            <img
+              src="/assets/uploads/icon/AIA.png"
+              alt="Company Logo"
+              class="me-4"
+              style="width: 100px; height: 60px; object-fit: contain;"
+            />
+
+            <div>
+              <h5 class="mb-1 fw-bold">Junior Data Architect</h5>
+              <a
+                href="https://companywebsite.com"
+                class="text-success text-decoration-none d-block mb-2"
+                target="_blank"
+              >
+                AIA Singapore - Batam
+              </a>
+
+              <p class="text-muted mb-2 d-md-none">May 2023 - Jan 2025</p>
+
+              <ul class="mb-2 ps-3">
+                <li>Built end-to-end campaign data architecture using PostgreSQL
+                  and Databricks from design to production</li>
+                <li>Developed a new database system to support business
+                  stakeholder requirements</li>
+                <li>Contributed to internal app front-end features used across
+                  multiple departments</li>
+                <li>Monitored job processes via Autosys and escalated critical
+                  issues to management</li>
+                <li>Provided ongoing data support and troubleshooting for
+                  cross-functional teams</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-secondary">PostgreSQL</span>
+                <span class="badge bg-secondary">Jira</span>
+                <span class="badge bg-secondary">Jenkins</span>
+                <span class="badge bg-secondary">git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-end mt-3 mt-md-0 d-none d-md-block">
+            <span class="text-muted">May 2023 - Jan 2025</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- My Project -->
+    <div class="container mt-5 mb-5 pb-5">
+      <h2 class="mb-4" id="Project">MY PROJECT</h2>
+      <div class="d-flex justify-content-end mb-4">
+        <a href="/add_project" target="_blank" class="btn btn-success me-4">
+          <i class="bi bi-plus-lg"></i>
+          Tambah Project
+        </a>
+      </div>
+      <div class="row justify-content-center gx-5">
+        {{#each projects}}
+          <div class="col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 600px;">
+              <!-- Gambar Project -->
+              <img
+                src="/assets/uploads/images/{{image_data}}"
+                alt="{{title}}"
+                class="card-img-top bg-secondary"
+                style="height: 200px; object-fit: contain;"
+              />
+
+              <div
+                class="card-body py-3 d-flex flex-column justify-content-between"
+                style="min-height: 200px;"
+              >
+                <!-- Judul dan Deskripsi -->
+                <div class="mb-2">
+                  <h5 class="fw-bold mb-1">{{title}}</h5>
+                  <p
+                    class="card-text text-secondary mb-2"
+                    style="
+                font-size: 0.95rem;
+                line-height: 1.4;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-align: justify;
+              "
+                  >
+                    {{description}}
+                  </p>
+                </div>
+
+                <!-- Tech + Links -->
+                <div class="mt-auto">
+                  <!-- Tech Stack -->
+                  <div class="d-flex flex-wrap gap-2 mb-2">
+                    {{#each tech}}
+                      <span class="badge bg-secondary">{{this}}</span>
+                    {{/each}}
+                  </div>
+
+                  <!-- GitHub & Live Demo Link -->
+                  <div class="d-flex gap-4 align-items-center">
+                    {{#if isGithubPrivate}}
+                      <span class="text-muted d-flex align-items-center gap-1">
+                        <i class="bi bi-github"></i>
+                        Private repository
+                      </span>
+                    {{else}}
+                      <a
+                        href="{{githubUrl}}"
+                        target="_blank"
+                        class="text-decoration-none text-muted fw-semibold d-flex align-items-center gap-1"
+                      >
+                        <i class="bi bi-github"></i>
+                        View on GitHub
+                      </a>
+                    {{/if}}
+
+                    {{#if demoUrl}}
+                      <a
+                        href="{{demoUrl}}"
+                        target="_blank"
+                        class="text-decoration-none text-primary fw-semibold d-flex align-items-center gap-1"
+                      >
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        Live Demo
+                      </a>
+                    {{else}}
+                      <span class="text-muted d-flex align-items-center gap-1">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        Demo unavailable
+                      </span>
+                    {{/if}}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+
+    </div>
+
+    <!-- Closing -->
+    <div class="text-center mb-5 mt-5 pb-5">
+      <h2 class="fw-bold">Let's build something together</h2>
+      <p class="text-muted">
+        Feel free to reach out if you're looking for a developer, have a
+        question, or just want to connect.
+      </p>
+      <p
+        class="mt-3 mb-5 pb-5 fw-semibold d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
+      >
+        <a
+          href=""
+          target="_blank"
+          class="text-muted text-decoration-none d-flex align-items-center"
+        >
+          <i class="bi bi-envelope me-2"></i>
+          alvinrikardo6@gmail.com
+        </a>
+
+        <span class="text-muted d-none d-md-inline">|</span>
+
+        <span class="text-muted d-flex align-items-center">
+          <i class="bi bi-whatsapp me-2"></i>
+          +62 819-9321-8599
+        </span>
+      </p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="border-top mt-5 pb-5 py-4 border-1 border-dark-subtle text-center"
+    >
+      <p class="mb-0">
+        &copy; 2025 Designed and coded with &#10084; by Alvin Rikardo
+      </p>
+
+      <div class="d-flex justify-content-center gap-3">
+        <a
+          href="https://github.com/Richardo33"
+          target="_blank"
+          class="text-muted fs-4"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alvin-rikardo/"
+          target="_blank"
+          class="text-muted fs-4"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script>
+      const toggleDarkMode = document.getElementById("toggleDarkMode");
+      toggleDarkMode.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("darkMode",
+      document.body.classList.contains("dark-mode")); });
+      window.addEventListener("DOMContentLoaded", () => { if
+      (localStorage.getItem("darkMode") === "true") {
+      document.body.classList.add("dark-mode"); } });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script>
+      const swiper = new Swiper(".techSwiper", { loop: true, speed: 500,
+      slidesPerView: 8, spaceBetween: 30, autoplay: { delay: 0,
+      disableOnInteraction: false, }, freeMode: false, freeModeMomentum: false, centeredSlides: false,
+      });
+    </script>
+
+  </body>
+</html>
