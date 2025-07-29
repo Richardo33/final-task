@@ -70,13 +70,12 @@
         <!-- FOTO -->
         <div class="col-md-4 text-center mb-4 mb-md-0">
           <img
-            src="../assets/uploads/Johan.jpeg"
+            src="../assets/uploads/Alvin.jpg"
             alt="Profile Photo"
             class="profile-photo shadow hover-zoom"
           />
         </div>
 
-        <!-- INFO UTAMA -->
         <div class="col-md-8">
           <h1 class="display-4 fw-bold">Hi, I'm Alvin</h1>
           <h4 class="text-muted mb-3">Fullstack Web Developer</h4>
@@ -96,9 +95,10 @@
           </p>
 
           <p class="mb-4 available-status">
-            <i class="bi bi-circle-fill available"></i>
+            <i class="bi bi-circle-fill available"></i> 
             Available for Work
-            {{! <i class="bi bi-circle-fill not-available"></i> Not Available for Work }}
+            {{!-- <i class="bi bi-circle-fill not-available"></i>
+            Not Available for Work --}}
           </p>
 
           <div class="d-flex gap-3 flex-wrap">
@@ -126,73 +126,117 @@
     </div>
 
     <!-- Tech Stack -->
-    <div class="container text-start my-5 mb-5 pb-5">
-      <h2 class="mb-5" id="Technologies">Technologies</h2>
+    <div class="container text-start py-5 my-5 pb-5" id="Technologies">
+      <h2 class="my-5">Technologies</h2>
 
-    <div class="swiper techSwiper">
-    <div class="swiper-wrapper">
+      <div class="swiper techSwiper">
+        <div class="swiper-wrapper">
 
-      <!-- Tech Slides -->
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/reactJs.png" class="img-fluid tech-icon mb-2" alt="React JS" />
-        <p class="mb-0">React JS</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/nodeJS.png" class="img-fluid tech-icon mb-2" alt="Node JS" />
-        <p class="mb-0">Node JS</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/ExpressJS.png" class="img-fluid tech-icon mb-2" alt="Express" />
-        <p class="mb-0">Express</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/mySQL.png" class="img-fluid tech-icon mb-2" alt="MySQL" />
-        <p class="mb-0">MySQL</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/jira.png" class="img-fluid tech-icon mb-2" alt="Jira" />
-        <p class="mb-0">Jira</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/postgreSQL.png" class="img-fluid tech-icon mb-2" alt="PostgreSQL" />
-        <p class="mb-0">PostgreSQL</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/materialUI.png" class="img-fluid tech-icon mb-2" alt="Material UI" />
-        <p class="mb-0">Material UI</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/bootstrap.png" class="img-fluid tech-icon mb-2" alt="Bootstrap" />
-        <p class="mb-0">Bootstrap</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/javascript.png" class="img-fluid tech-icon mb-2" alt="JavaScript" />
-        <p class="mb-0">JavaScript</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/git.png" class="img-fluid tech-icon mb-2" alt="Git" />
-        <p class="mb-0">Git</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/databricks.png" class="img-fluid tech-icon mb-2" alt="Databricks" />
-        <p class="mb-0">Databricks</p>
-      </div>
-      <div class="swiper-slide text-center">
-        <img src="/assets/uploads/icon/jenkins.png" class="img-fluid tech-icon mb-2" alt="Jenkins" />
-        <p class="mb-0">Jenkins</p>
-      </div>
+          <!-- Tech Slides -->
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/reactJs.png"
+              class="img-fluid tech-icon mb-2"
+              alt="React JS"
+            />
+            <p class="mb-0">React JS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/nodeJS.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Node JS"
+            />
+            <p class="mb-0">Node JS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/ExpressJS.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Express"
+            />
+            <p class="mb-0">Express</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/mySQL.png"
+              class="img-fluid tech-icon mb-2"
+              alt="MySQL"
+            />
+            <p class="mb-0">MySQL</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/jira.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Jira"
+            />
+            <p class="mb-0">Jira</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/postgreSQL.png"
+              class="img-fluid tech-icon mb-2"
+              alt="PostgreSQL"
+            />
+            <p class="mb-0">PostgreSQL</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/materialUI.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Material UI"
+            />
+            <p class="mb-0">Material UI</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/bootstrap.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Bootstrap"
+            />
+            <p class="mb-0">Bootstrap</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/javascript.png"
+              class="img-fluid tech-icon mb-2"
+              alt="JavaScript"
+            />
+            <p class="mb-0">JavaScript</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/git.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Git"
+            />
+            <p class="mb-0">Git</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/databricks.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Databricks"
+            />
+            <p class="mb-0">Databricks</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img
+              src="/assets/uploads/icon/jenkins.png"
+              class="img-fluid tech-icon mb-2"
+              alt="Jenkins"
+            />
+            <p class="mb-0">Jenkins</p>
+          </div>
 
         </div>
+      </div>
     </div>
-    </div>
-</div>
-
-
-    
 
     <!-- Experience -->
-    <div class="container my-5 mb-5 pb-5">
-      <h2 class="mb-4" id="Experiences">Work Experiences :</h2>
+    <div class="container my-5 py-5 mb-5 pb-5" id="Experiences">
+      <h2 class="my-4">Work Experiences :</h2>
 
       <div class="card border-0 p-4 mb-4">
         <div class="d-flex justify-content-between flex-wrap">
@@ -213,7 +257,7 @@
                 AIA Singapore - Batam
               </a>
 
-              <p class="text-muted mb-2 d-md-none">May 2023 - Jan 2025</p>
+              <p class="text-muted mb-2 d-md-none">March 2023 - Jan 2025</p>
 
               <!-- Deskripsi Pekerjaan -->
               <ul class="mb-2 ps-3">
@@ -243,7 +287,7 @@
             </div>
           </div>
           <div class="text-end mt-3 mt-md-0 d-none d-md-block">
-            <span class="text-muted">May 2023 - Jan 2025</span>
+            <span class="text-muted">March 2022 - Jan 2025</span>
           </div>
 
         </div>
@@ -270,7 +314,7 @@
                 AIA Singapore - Batam
               </a>
 
-              <p class="text-muted mb-2 d-md-none">May 2023 - Jan 2025</p>
+              <p class="text-muted mb-2 d-md-none">June 2022 - March 2023</p>
 
               <ul class="mb-2 ps-3">
                 <li>Built end-to-end campaign data architecture using PostgreSQL
@@ -303,15 +347,15 @@
     </div>
 
     <!-- My Project -->
-    <div class="container mt-5 mb-5 pb-5">
-      <h2 class="mb-4" id="Project">MY PROJECT</h2>
+    <div class="container my-5 pt-5 pb-5" id="Project">
+      <h2 class="mt-4">MY PROJECT</h2>
       <div class="d-flex justify-content-end mb-4">
-        <a href="/add_project" target="_blank" class="btn btn-success me-4">
+        <a href="/add_project" class="btn btn-success me-4">
           <i class="bi bi-plus-lg"></i>
           Tambah Project
         </a>
       </div>
-      <div class="row justify-content-center gx-5">
+      <div class="row justify-content-start gx-5">
         {{#each projects}}
           <div class="col-md-6 mb-4 d-flex justify-content-center">
             <div class="card" style="width: 600px;">
@@ -319,12 +363,12 @@
               <img
                 src="/assets/uploads/images/{{image_data}}"
                 alt="{{title}}"
-                class="card-img-top bg-secondary"
+                class="card-img-top"
                 style="height: 200px; object-fit: contain;"
               />
 
               <div
-                class="card-body py-3 d-flex flex-column justify-content-between"
+                class="card-body pe-5 ps-4 py-3 d-flex flex-column justify-content-between"
                 style="min-height: 200px;"
               >
                 <!-- Judul dan Deskripsi -->
@@ -418,10 +462,10 @@
           alvinrikardo6@gmail.com
         </a>
 
-        <span class="text-muted d-none d-md-inline">|</span>
+        <span class="text-muted d-none d-md-inline px-4 ">|</span>
 
         <span class="text-muted d-flex align-items-center">
-          <i class="bi bi-whatsapp me-2"></i>
+          <i class="bi bi-whatsapp text-success me-2"></i>
           +62 819-9321-8599
         </span>
       </p>
@@ -474,10 +518,10 @@
     ></script>
 
     <script>
-      const swiper = new Swiper(".techSwiper", { loop: true, speed: 500,
-      slidesPerView: 8, spaceBetween: 30, autoplay: { delay: 0,
-      disableOnInteraction: false, }, freeMode: false, freeModeMomentum: false, centeredSlides: false,
-      });
+      const swiper = new Swiper(".techSwiper", { loop: true, speed: 3000,
+      slidesPerView: 7, spaceBetween: 0, autoplay: { delay: 0,
+      disableOnInteraction: false,reverseDirection: true, }, freeMode: false,
+      freeModeMomentum: false, centeredSlides: false, });
     </script>
 
   </body>

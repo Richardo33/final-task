@@ -31,13 +31,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.tech-icon {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
 .tech-icon:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -53,6 +46,14 @@
   border-radius: 4px;
 }
 
+.card .card-img-top {
+  background-color: #f3f4f6;
+}
+
+body.dark-mode .card .card-img-top {
+  background-color: #374151;
+}
+
 body.dark-mode .card {
   background-color: #1e1e1e;
   color: #fff;
@@ -66,10 +67,6 @@ body.dark-mode .card .text-muted {
 body.dark-mode .badge {
   background-color: #333;
   color: #fff;
-}
-
-.card {
-  box-shadow: gray;
 }
 
 .card:hover {
@@ -139,22 +136,34 @@ body.dark-mode .btn-outline-success:hover {
   }
 }
 
-.techSwiper {
-  padding: 10px 0;
-}
-
 .tech-icon {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .techSwiper {
-  max-height: 140px; /* kamu bisa sesuaikan */
-  padding: 1rem 0; /* beri sedikit ruang atas bawah */
+  max-height: 140px;
+  padding: 1rem 0;
+  
 }
 
-.swiper-slide img {
-  max-height: 80px; /* atau 60px agar seragam */
+.techSwiper .swiper-slide img {
+  max-height: 80px;
   object-fit: contain;
+}
+
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
 }

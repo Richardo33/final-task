@@ -3,6 +3,7 @@ import { projects } from "./src/assets/js/projects.js";
 import multer from "multer";
 import { Pool } from 'pg'
 import path from "path";
+import { log } from "console";
 
 
 const db = new Pool({
@@ -36,6 +37,12 @@ app.use("/assets", express.static("src/assets"));
 
 app.get("/", home)
 
+app.get("/add_project", (req, res) => {
+    res.render("add_project");
+});
+
+app.post("/add_project", upload.single('imageProject'), handleAdd);
+
 async function home(req, res) {
     try {
         const result = await db.query(`SELECT * FROM projects ORDER BY id DESC`);
@@ -56,31 +63,12 @@ async function home(req, res) {
 }
 
 
-
-
-app.get("/add_project", (req, res) => {
-    res.render("add_project");
-});
-
-app.post("/add_project", upload.single('imageProject'), handleAdd);
-
 async function handleAdd(req, res) {
     try {
         const { title, description, githubUrl, demoUrl, tech, isGithubPrivate } = req.body;
         const imageName = req.file.filename;
 
         const techList = tech.split(",").map((t) => t.trim());
-
-        // console.log({
-        //     title,
-        //     description,
-        //     githubUrl,
-        //     demoUrl,
-        //     techList,
-        //     isGithubPrivate,
-        //     fileReceived: !!req.file
-        // });
-
 
         await db.query(
             `INSERT INTO projects (title, description, image_data, github_url, demo_url, tech, is_github_private)
