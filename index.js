@@ -3,7 +3,6 @@ import { projects } from "./src/assets/js/projects.js";
 import multer from "multer";
 import { Pool } from 'pg'
 import path from "path";
-import { log } from "console";
 
 
 const db = new Pool({
@@ -34,6 +33,7 @@ app.set("view engine", "hbs");
 app.set("views", "src/views");
 
 app.use("/assets", express.static("src/assets"));
+app.use(express.static('src/assets'));
 
 app.get("/", home)
 
@@ -76,7 +76,8 @@ async function handleAdd(req, res) {
             [title, description, imageName, githubUrl, demoUrl, techList, isGithubPrivate ? true : false]
         );
 
-        res.redirect("/");
+        res.redirect('/add_project?success=true');
+        ;
     } catch (error) {
         console.error("Gagal simpan project:", error.message);
         res.status(500).send("Server error");

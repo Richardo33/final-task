@@ -33,6 +33,7 @@
           >
             <a class="nav-link" href="#Technologies">Techstack</a>
             <a class="nav-link" href="#Experiences">Experience</a>
+            <a class="nav-link" href="#Certifications">Certifications</a>
             <a class="nav-link" href="#Project">Projects</a>
 
             <a
@@ -67,17 +68,47 @@
     <div class="container py-5 pe-md-5 mb-5">
       <div class="row align-items-center">
 
-        <!-- FOTO -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
+    <div class="profile-flip-container">
+      <div class="profile-flip-inner">
+        <!-- Bagian Depan -->
+        <div class="profile-flip-front">
           <img
-            src="../assets/uploads/Alvin.jpg"
+            src="/uploads/dumImages/Alvin.jpg"
             alt="Profile Photo"
-            class="profile-photo shadow hover-zoom"
+            class="profile-photo img-fluid"
           />
         </div>
 
+        <!-- Bagian Belakang -->
+        <div class="profile-flip-back d-flex flex-column justify-content-between text-white text-center">
+          <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <h4 class="mb-0">Alvin Rikardo</h4>
+          </div>
+
+          <div class="social-icons py-3">
+            <a href="https://github.com/Richardo33" target="_blank" class="text-white mx-2 fs-4">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alvin-rikardo/" target="_blank" class="text-white mx-2 fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:alvinrikardo6@gmail.com" class="text-white mx-2 fs-4">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://wa.me/6281993218599" target="_blank" class="text-white mx-2 fs-4">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/richardo_alvin?igsh=bnZ1YXFmZTAybG9j" target="_blank" class="text-white mx-2 fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         <div class="col-md-8">
-          <h1 class="display-4 fw-bold">Hi, I'm Alvin</h1>
+          <h1 class="display-4 fw-bold">Hi, I'm Richard &#x1F44B;</h1>
           <h4 class="text-muted mb-3">Fullstack Web Developer</h4>
 
           <p class="detail mb-4 fs-4 text-secondary text-justify">
@@ -238,13 +269,14 @@
     <div class="container my-5 py-5 mb-5 pb-5" id="Experiences">
       <h2 class="my-4">Work Experiences :</h2>
 
+      <!-- Experience 1 -->
       <div class="card border-0 p-4 mb-4">
         <div class="d-flex justify-content-between flex-wrap">
-          <div class="d-flex">
+          <div class="d-flex flex-column flex-md-row">
             <img
               src="/assets/uploads/icon/AIA.png"
               alt="Company Logo"
-              class="me-4"
+              class="me-md-4 mb-3 mb-md-0"
               style="width: 100px; height: 60px; object-fit: contain;"
             />
             <div>
@@ -259,23 +291,15 @@
 
               <p class="text-muted mb-2 d-md-none">March 2023 - Jan 2025</p>
 
-              <!-- Deskripsi Pekerjaan -->
               <ul class="mb-2 ps-3">
-                <li>Transitioned into the role of Database Developer from Data
-                  Architect background</li>
-                <li>Designed and implemented scalable data architecture using
-                  PostgreSQL and Databricks</li>
-                <li>Managed data extraction, transformation, and loading (ETL)
-                  processes</li>
-                <li>Supported cross-functional teams with timely and reliable
-                  data solutions</li>
-                <li>Deployed UAT builds via Jenkins; prepared production
-                  releases using Jira</li>
-                <li>Applied Agile methodologies to ensure efficient and on-time
-                  project delivery</li>
+                <li>Transitioned into the role of Database Developer from Data Architect background</li>
+                <li>Designed and implemented scalable data architecture using PostgreSQL and Databricks</li>
+                <li>Managed data extraction, transformation, and loading (ETL) processes</li>
+                <li>Supported cross-functional teams with timely and reliable data solutions</li>
+                <li>Deployed UAT builds via Jenkins; prepared production releases using Jira</li>
+                <li>Applied Agile methodologies to ensure efficient and on-time project delivery</li>
               </ul>
 
-              <!-- Tech Stack -->
               <div class="d-flex flex-wrap gap-2 mt-2">
                 <span class="badge bg-secondary">PostgreSQL</span>
                 <span class="badge bg-secondary">Databricks</span>
@@ -283,27 +307,24 @@
                 <span class="badge bg-secondary">Jenkins</span>
                 <span class="badge bg-secondary">git</span>
               </div>
-
             </div>
           </div>
           <div class="text-end mt-3 mt-md-0 d-none d-md-block">
-            <span class="text-muted">March 2022 - Jan 2025</span>
+            <span class="text-muted">March 2023 - Jan 2025</span>
           </div>
-
         </div>
       </div>
 
+      <!-- Experience 2 -->
       <div class="card border-0 p-4 mb-4">
         <div class="d-flex justify-content-between flex-wrap">
-
-          <div class="d-flex">
+          <div class="d-flex flex-column flex-md-row">
             <img
               src="/assets/uploads/icon/AIA.png"
               alt="Company Logo"
-              class="me-4"
+              class="me-md-4 mb-3 mb-md-0"
               style="width: 100px; height: 60px; object-fit: contain;"
             />
-
             <div>
               <h5 class="mb-1 fw-bold">Junior Data Architect</h5>
               <a
@@ -317,16 +338,11 @@
               <p class="text-muted mb-2 d-md-none">June 2022 - March 2023</p>
 
               <ul class="mb-2 ps-3">
-                <li>Built end-to-end campaign data architecture using PostgreSQL
-                  and Databricks from design to production</li>
-                <li>Developed a new database system to support business
-                  stakeholder requirements</li>
-                <li>Contributed to internal app front-end features used across
-                  multiple departments</li>
-                <li>Monitored job processes via Autosys and escalated critical
-                  issues to management</li>
-                <li>Provided ongoing data support and troubleshooting for
-                  cross-functional teams</li>
+                <li>Built end-to-end campaign data architecture using PostgreSQL and Databricks from design to production</li>
+                <li>Developed a new database system to support business stakeholder requirements</li>
+                <li>Contributed to internal app front-end features used across multiple departments</li>
+                <li>Monitored job processes via Autosys and escalated critical issues to management</li>
+                <li>Provided ongoing data support and troubleshooting for cross-functional teams</li>
               </ul>
 
               <div class="d-flex flex-wrap gap-2 mt-2">
@@ -337,18 +353,107 @@
               </div>
             </div>
           </div>
-
           <div class="text-end mt-3 mt-md-0 d-none d-md-block">
-            <span class="text-muted">May 2023 - Jan 2025</span>
+            <span class="text-muted">June 2022 - March 2023</span>
           </div>
-
         </div>
       </div>
     </div>
 
+
+    <!-- Certification -->
+    <section class="py-5" id="Certifications">
+      <div class="container">
+        <h2 class="m3-4 py-4">Certificates :</h2>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner text-center py-3">
+
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/certificate-dumbways.jpg" class="certif-img img-fluid" alt="Dumbways">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/dumbways.jpg" class="certif-img img-fluid" alt="dumbways">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/Dunia_Coding_React.jpg" class="certif-img img-fluid" alt="Dunia Coding">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/Mini_Class.jpg" class="certif-img img-fluid" alt="Mini Class">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/sql_advanced.jpg" class="certif-img img-fluid" alt="SQL Advanced">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/sql_intermediate.jpg" class="certif-img img-fluid" alt="SQL Intermediate">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/waystalk1.jpg" class="certif-img img-fluid" alt="waystalk 1">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/waystalk2.jpg" class="certif-img img-fluid" alt="SQL Intermediate">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/Waystalk4.jpg" class="certif-img img-fluid" alt="Waystalk 4">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/Waystalk6.jpg" class="certif-img img-fluid" alt="Waystalk 6">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <img src="/uploads/certif/Waystalk10.jpg" class="certif-img img-fluid" alt="Waystalk 10">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="/uploads/certif/Efset.png" class="certif-img img-fluid" alt="Efset">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
     <!-- My Project -->
     <div class="container my-5 pt-5 pb-5" id="Project">
-      <h2 class="mt-4">MY PROJECT</h2>
+      <h2 class="mt-4">My Projects :</h2>
       <div class="d-flex justify-content-end mb-4">
         <a href="/add_project" class="btn btn-success me-4">
           <i class="bi bi-plus-lg"></i>
@@ -359,7 +464,7 @@
         {{#each projects}}
           <div class="col-md-6 mb-4 d-flex justify-content-center">
             <div class="card" style="width: 600px;">
-              <!-- Gambar Project -->
+
               <img
                 src="/assets/uploads/images/{{image_data}}"
                 alt="{{title}}"
@@ -371,7 +476,7 @@
                 class="card-body pe-5 ps-4 py-3 d-flex flex-column justify-content-between"
                 style="min-height: 200px;"
               >
-                <!-- Judul dan Deskripsi -->
+
                 <div class="mb-2">
                   <h5 class="fw-bold mb-1">{{title}}</h5>
                   <p
@@ -390,16 +495,13 @@
                   </p>
                 </div>
 
-                <!-- Tech + Links -->
                 <div class="mt-auto">
-                  <!-- Tech Stack -->
                   <div class="d-flex flex-wrap gap-2 mb-2">
                     {{#each tech}}
                       <span class="badge bg-secondary">{{this}}</span>
                     {{/each}}
                   </div>
 
-                  <!-- GitHub & Live Demo Link -->
                   <div class="d-flex gap-4 align-items-center">
                     {{#if isGithubPrivate}}
                       <span class="text-muted d-flex align-items-center gap-1">
@@ -454,13 +556,14 @@
         class="mt-3 mb-5 pb-5 fw-semibold d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
       >
         <a
-          href=""
-          target="_blank"
+          href="mailto:alvinrikardo6@gmail.com"
           class="text-muted text-decoration-none d-flex align-items-center"
         >
           <i class="bi bi-envelope me-2"></i>
           alvinrikardo6@gmail.com
         </a>
+
+
 
         <span class="text-muted d-none d-md-inline px-4 ">|</span>
 
@@ -480,7 +583,7 @@
         &copy; 2025 Designed and coded with &#10084; by Alvin Rikardo
       </p>
 
-      <div class="d-flex justify-content-center gap-3">
+      <div class="d-flex justify-content-center gap-3 pt-3">
         <a
           href="https://github.com/Richardo33"
           target="_blank"
@@ -518,11 +621,41 @@
     ></script>
 
     <script>
-      const swiper = new Swiper(".techSwiper", { loop: true, speed: 3000,
-      slidesPerView: 7, spaceBetween: 0, autoplay: { delay: 0,
-      disableOnInteraction: false,reverseDirection: true, }, freeMode: false,
-      freeModeMomentum: false, centeredSlides: false, });
+      const swiper = new Swiper(".techSwiper", {
+      loop: true,
+      speed: 3000,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      freeMode: false,
+      freeModeMomentum: false,
+      centeredSlides: false,
+
+      breakpoints: {
+        1200: {
+          slidesPerView: 7,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        576: {
+          slidesPerView: 3,
+        },
+        0: {
+          slidesPerView: 2,
+        },
+      },
+    });
+
     </script>
+
+
 
   </body>
 </html>

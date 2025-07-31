@@ -27,7 +27,7 @@
 }
 
 .hover-zoom:hover {
-  transform: scale(1.1); /* membesar 10% */
+  transform: scale(1.1);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -37,7 +37,7 @@
   border-radius: 10px;
 }
 
-/* Opsional: agar tidak muncul scrollbar jelek di browser */
+
 .tech-carousel-scroll::-webkit-scrollbar {
   height: 8px;
 }
@@ -167,3 +167,97 @@ body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
   color: #aaa;
 }
+
+.certif-section{
+  background-color: #F3F4F6;
+}
+
+body.dark-mode .certif-section{
+  background-color: #121212;
+}
+
+.certif-img {
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.certif-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  /* transform: scale(1.05) rotate(1deg); */
+}
+
+
+.profile-flip-container {
+  perspective: 1000px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.profile-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.profile-flip-container:hover .profile-flip-inner {
+  transform: rotateY(-180deg);
+}
+
+.profile-flip-front,
+.profile-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.profile-flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-flip-back {
+  background-color: #212529;
+  transform: rotateY(-180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+
+  #mainNavbar {
+    display: none !important; 
+  }
+}
+
+

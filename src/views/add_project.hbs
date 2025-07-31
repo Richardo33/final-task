@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="/assets/css/navbar.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Add Project</title>
@@ -32,7 +33,6 @@
             class="ms-auto d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mt-3 mt-md-0"
           >
 
-            <!-- Button Let's Talk -->
             <a
               href="https://wa.me/6281993218599"
               target="_blank"
@@ -42,7 +42,6 @@
               Let's Talk
             </a>
 
-            <!-- Button Download CV -->
             <a
               href="https://drive.google.com/file/d/1qixae2Ecj4ft26nThV8cpInfKK1nsKYw/view?usp=drive_link"
               class="btn btn-dark d-flex align-items-center gap-1"
@@ -187,6 +186,18 @@
       (localStorage.getItem("darkMode") === "true") {
       document.body.classList.add("dark-mode"); } });
     </script>
+
+    <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true') {
+    Swal.fire({
+      icon: 'success',
+      title: 'Berhasil!',
+      text: 'Project berhasil ditambahkan.',
+      confirmButtonColor: '#28a745'
+    });
+  }
+</script>
 
   </body>
 </html>
