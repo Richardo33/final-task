@@ -261,3 +261,42 @@ body.dark-mode .certif-section{
 }
 
 
+@media (max-width: 1023.98px) {
+  .row.align-items-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-flip-container {
+    order: -1; /* Geser ke atas */
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .col-md-8 {
+    width: 100%;
+  }
+}
+
+/* Tanggal di bawah untuk layar < 1024px */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .experience-date-md {
+    display: block !important;
+  }
+  .experience-date-lg {
+    display: none !important;
+  }
+}
+
+/* Tanggal di kanan hanya jika layar >= 1024px */
+@media (min-width: 1024px) {
+  .date-desktop {
+    display: block !important;
+  }
+}
+
+
+
+
