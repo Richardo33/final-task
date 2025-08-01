@@ -67,7 +67,7 @@
         <div class="col-lg-10 col-xl-8">
           <div class="card shadow-lg border-0">
             <div class="card-body p-5">
-              <h3 class="mb-4 text-center fw-bold">Tambah Project</h3>
+              <h3 class="mb-4 text-center fw-bold">Add Project</h3>
 
               <form
                 action="/add_project"
@@ -76,7 +76,7 @@
               >
                 <!-- Judul -->
                 <div class="mb-3">
-                  <label for="title" class="form-label">Judul Project</label>
+                  <label for="title" class="form-label">Project Name</label>
                   <input
                     type="text"
                     class="form-control"
@@ -88,7 +88,7 @@
 
                 <!-- Deskripsi -->
                 <div class="mb-3">
-                  <label for="description" class="form-label">Deskripsi</label>
+                  <label for="description" class="form-label">Description</label>
                   <textarea
                     class="form-control"
                     style="resize:none"
@@ -107,14 +107,14 @@
                     class="form-control"
                     id="tech"
                     name="tech"
-                    placeholder="Pisahkan dengan koma (contoh: React, NodeJS, PostgreSQL)"
+                    placeholder="Separate with commas (e.g., React, NodeJS, PostgreSQL)"
                     required
                   />
                 </div>
 
                 <!-- Gambar Project -->
                 <div class="mb-3">
-                  <label for="image" class="form-label">Gambar Project</label>
+                  <label for="image" class="form-label">Project Image</label>
                   <input
                     class="form-control"
                     type="file"
@@ -133,6 +133,7 @@
                     class="form-control"
                     id="githubUrl"
                     name="githubUrl"
+                    required
                   />
                 </div>
 
@@ -157,7 +158,7 @@
                     name="isGithubPrivate"
                   />
                   <label class="form-check-label" for="isGithubPrivate">
-                    Tandai sebagai repository private
+                    Mark as private repository
                   </label>
                 </div>
 
@@ -165,7 +166,7 @@
                 <div class="text-end">
                   <button type="submit" class="btn btn-success px-4 py-2">
                     <i class="bi bi-plus-lg me-1"></i>
-                    Simpan Project
+                    Save Project
                   </button>
                 </div>
               </form>

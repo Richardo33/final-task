@@ -1,5 +1,6 @@
 Untuk Database postgreSQL bisa menjalankan query dibawah untuk connection bisa disesuaikan dengan conection di index.js. untuk data di bagian my project bisa menambahkan data melalui button add project yg ada di tampilan
 
+
 CREATE TABLE projects (
   id SERIAL PRIMARY KEY,
   title TEXT,
