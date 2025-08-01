@@ -51,6 +51,7 @@ async function home(req, res) {
             ...project,
             tech: project.tech || [],
             isGithubPrivate: project.is_github_private === true,
+            githubUrl: project.github_url,
             demoUrl: project.demo_url
         }));
         // console.log(projects)
